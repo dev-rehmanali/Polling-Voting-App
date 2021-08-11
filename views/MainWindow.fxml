@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="748.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWindowController">
+  <tabs>
+    <Tab fx:id="editTab" text="Edit">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ComboBox fx:id="pollEditComboBox" layoutX="161.0" layoutY="38.0" prefHeight="25.0" prefWidth="100.0" />
+                  <Label layoutX="66.0" layoutY="41.0" prefHeight="20.0" prefWidth="95.0" text="Poll to Edit: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="updatePollNameTextField" layoutX="66.0" layoutY="82.0" prefHeight="35.0" prefWidth="170.0" />
+                  <Button fx:id="updatePollNameButton" layoutX="250.0" layoutY="82.0" mnemonicParsing="false" prefHeight="35.0" text="Update Poll Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="partyToUpdateComboBox" layoutX="179.0" layoutY="144.0" prefHeight="25.0" prefWidth="100.0" />
+                  <Label layoutX="66.0" layoutY="147.0" prefHeight="20.0" prefWidth="113.0" text="Party to Update: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="66.0" layoutY="195.0" prefHeight="20.0" prefWidth="176.0" text="Projected Number of Seats:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="numberOfSeatsTextField" layoutX="253.0" layoutY="193.0" prefHeight="25.0" prefWidth="73.0" />
+                  <Label layoutX="329.0" layoutY="202.0" text="/290" />
+                  <Label layoutX="66.0" layoutY="245.0" prefHeight="20.0" prefWidth="201.0" text="Projected Percentage of Vote: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="percentageOfVotesTextField" layoutX="253.0" layoutY="243.0" prefHeight="25.0" prefWidth="73.0" />
+                  <Label layoutX="331.0" layoutY="252.0" text="\%" />
+                  <Button fx:id="clearButton" layoutX="66.0" layoutY="315.0" mnemonicParsing="false" text="Clear">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="updatePartyButton" layoutX="124.0" layoutY="315.0" mnemonicParsing="false" text="Update Party">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="visualizeTab" text="Visualize">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ComboBox fx:id="aggregatePollComboBox" layoutX="311.0" layoutY="14.0" prefHeight="25.0" prefWidth="127.0" promptText="Aggregate Poll" />
+                  <PieChart fx:id="pieChart1" layoutX="14.0" layoutY="54.0" prefHeight="310.0" prefWidth="350.0" />
+                  <PieChart fx:id="pieChart2" layoutX="384.0" layoutY="54.0" prefHeight="310.0" prefWidth="350.0" />
+                  <Label layoutX="124.0" layoutY="29.0" text="Projected Seats">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="502.0" layoutY="29.0" text="Projected Percent of Votes">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
